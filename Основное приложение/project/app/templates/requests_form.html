@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block title %}{% if request_item %}Редактирование заявки{% else %}Новая заявка{% endif %}{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">{% if request_item %}Редактирование заявки №{{ request_item.request_id }}{% else %}Новая заявка{% endif %}</h1>
+
+<form method="post" class="card card-body">
+  <div class="row g-3">
+    {% if not request_item %}
+    <div class="col-md-3">
+      <label class="form-label">Дата добавления</label>
+      <input class="form-control" type="date" name="create_date" value="{{ request.form.get('create_date', '') }}">
+    </div>
+    {% endif %}
+
+    <div class="col-md-{{ '9' if not request_item else '12' }}">
+      <label class="form-label">Описание проблемы</label>
+      <textarea class="form-control" name="description" rows="3" required>{% if request_item %}{{ request_item.description }}{% else %}{{ request.form.get('description', '') }}{% endif %}</textarea>
+    </div>
+
+    {% if not request_item %}
+    <div class="col-12"><hr><h2 class="h5">Данные клиента</h2></div>
+    <div class="col-md-6">
+      <label class="form-label">ФИО заказчика</label>
+      <input class="form-control" name="client_full_name" required value="{{ request.form.get('client_full_name', '') }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Телефон</label>
+      <input class="form-control" name="client_phone" required value="{{ request.form.get('client_phone', '') }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input class="form-control" name="client_email" value="{{ request.form.get('client_email', '') }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Адрес</label>
+      <input class="form-control" name="client_address" value="{{ request.form.get('client_address', '') }}">
+    </div>
+
+    <div class="col-12"><hr><h2 class="h5">Данные оборудования</h2></div>
+    <div class="col-md-4">
+      <label class="form-label">Тип оборудования</label>
+      <input class="form-control" name="equipment_type" required value="{{ request.form.get('equipment_type', '') }}">
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Модель устройства</label>
+      <input class="form-control" name="equipment_model" required value="{{ request.form.get('equipment_model', '') }}">
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Серийный номер</label>
+      <input class="form-control" name="serial_number" required value="{{ request.form.get('serial_number', '') }}">
+    </div>
+    {% else %}
+    <div class="col-12"><hr><h2 class="h5">Клиент и оборудование</h2></div>
+    <div class="col-md-6">
+      <label class="form-label">Клиент</label>
+      <input class="form-control" disabled value="{{ request_item.equipment.client.full_name }} ({{ request_item.equipment.client.phone }})">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Оборудование</label>
+      <input class="form-control" disabled value="{{ request_item.equipment.equipment_type }} / {{ request_item.equipment.model }} / {{ request_item.equipment.serial_number }}">
+    </div>
+    {% endif %}
+
+    <div class="col-12"><hr><h2 class="h5">Параметры заявки</h2></div>
+    <div class="col-md-4">
+      <label class="form-label">Статус</label>
+      <select class="form-select" name="status">
+        {% set current_status = request_item.status if request_item else request.form.get('status', 'open') %}
+        {% for st in request_statuses %}
+        <option value="{{ st }}" {% if current_status == st %}selected{% endif %}>{{ status_label(st) }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Ответственный специалист</label>
+      <select class="form-select" name="master_id">
+        <option value="">Не назначен</option>
+        {% set selected_master = request_item.master_id if request_item else request.form.get('master_id', '') %}
+        {% for master in masters %}
+        <option value="{{ master.master_id }}" {% if selected_master|string == master.master_id|string %}selected{% endif %}>{{ master.full_name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Срок выполнения</label>
+      <input class="form-control" type="date" name="deadline_date" value="{% if request_item and request_item.deadline_date %}{{ request_item.deadline_date.strftime('%Y-%m-%d') }}{% else %}{{ request.form.get('deadline_date', '') }}{% endif %}">
+    </div>
+
+    {% if request_item %}
+    <div class="col-md-6 form-check ms-2">
+      <input class="form-check-input" type="checkbox" name="customer_approved_extension" {% if request_item.customer_approved_extension %}checked{% endif %}>
+      <label class="form-check-label">Продление согласовано с заказчиком</label>
+    </div>
+    {% endif %}
+
+    <div class="col-12">
+      <label class="form-label">Типы неисправностей</label>
+      <div class="row row-cols-1 row-cols-md-2 g-2">
+        {% for fault in fault_types %}
+        <div class="col">
+          <label class="form-check-label border rounded p-2 d-block">
+            <input class="form-check-input me-1" type="checkbox" name="fault_type_ids" value="{{ fault.fault_type_id }}" {% if fault.fault_type_id in selected_faults %}checked{% endif %}>
+            {{ fault.fault_name }}
+          </label>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 d-flex gap-2">
+    <button class="btn btn-primary" type="submit">Сохранить</button>
+    {% if request_item %}
+    <a class="btn btn-outline-secondary" href="{{ url_for('requests_detail', request_id=request_item.request_id) }}">Назад</a>
+    {% else %}
+    <a class="btn btn-outline-secondary" href="{{ url_for('requests_list') }}">Назад</a>
+    {% endif %}
+  </div>
+</form>
+{% endblock %}

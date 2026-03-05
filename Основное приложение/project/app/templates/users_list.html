@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Пользователи{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3 mb-0">Пользователи системы</h1>
+  <a class="btn btn-primary" href="{{ url_for('users_new') }}">Добавить пользователя</a>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped align-middle">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Логин</th>
+        <th>Роль</th>
+        <th>Специалист</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for u in users %}
+      <tr>
+        <td>{{ u.user_id }}</td>
+        <td>{{ u.login }}</td>
+        <td>{{ u.role.role_name }}</td>
+        <td>{{ u.master.full_name if u.master else '-' }}</td>
+        <td><a class="btn btn-sm btn-outline-primary" href="{{ url_for('users_edit', user_id=u.user_id) }}">Изменить</a></td>
+      </tr>
+      {% else %}
+      <tr><td colspan="5" class="text-center text-muted">Пользователи не найдены.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

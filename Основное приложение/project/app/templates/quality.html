@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Оценка качества{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">Оценка качества обслуживания</h1>
+
+<div class="card">
+  <div class="card-body text-center">
+    <p class="mb-3">Сканируйте QR-код, чтобы открыть форму опроса клиента о качестве выполненных работ.</p>
+    <img src="{{ url_for('quality_qr_svg', request_id=request.args.get('request_id', '')) }}" alt="QR" class="img-fluid qr-main">
+    <div class="mt-3">
+      <a class="btn btn-primary" target="_blank" href="{{ quality_url }}">Открыть форму опроса</a>
+      <a class="btn btn-outline-secondary" href="{{ url_for('feedback_new') }}">Локальная форма отзыва</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

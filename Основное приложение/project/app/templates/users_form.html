@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}{% if user %}Редактирование пользователя{% else %}Новый пользователь{% endif %}{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">{% if user %}Редактирование пользователя{% else %}Новый пользователь{% endif %}</h1>
+
+<form method="post" class="card card-body">
+  <div class="row g-3">
+    <div class="col-md-4">
+      <label class="form-label">Логин</label>
+      <input class="form-control" name="login" required value="{{ user.login if user else '' }}">
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Пароль {% if user %}(оставьте пустым, чтобы не менять){% endif %}</label>
+      <input class="form-control" type="password" name="password" {% if not user %}required{% endif %}>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Роль</label>
+      <select class="form-select" name="role_id" required>
+        <option value="">Выберите роль</option>
+        {% for role in roles %}
+        <option value="{{ role.role_id }}" {% if user and user.role_id == role.role_id %}selected{% endif %}>{{ role.role_name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Связанный специалист (необязательно)</label>
+      <select class="form-select" name="master_id">
+        <option value="">Не привязывать</option>
+        {% for m in masters %}
+        <option value="{{ m.master_id }}" {% if user and user.master_id == m.master_id %}selected{% endif %}>{{ m.full_name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <div class="mt-4 d-flex gap-2">
+    <button class="btn btn-primary" type="submit">Сохранить</button>
+    <a class="btn btn-outline-secondary" href="{{ url_for('users_list') }}">Назад</a>
+  </div>
+</form>
+{% endblock %}

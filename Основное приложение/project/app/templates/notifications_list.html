@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Уведомления{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">Уведомления о смене статусов</h1>
+
+<div class="table-responsive">
+  <table class="table table-striped align-middle">
+    <thead>
+      <tr>
+        <th>Дата</th>
+        <th>Заявка</th>
+        <th>Старый статус</th>
+        <th>Новый статус</th>
+        <th>Сообщение</th>
+        <th>Пользователь</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for n in notifications %}
+      <tr>
+        <td>{{ n.created_at.strftime('%d.%m.%Y %H:%M') }}</td>
+        <td><a href="{{ url_for('requests_detail', request_id=n.request_id) }}">№{{ n.request_id }}</a></td>
+        <td>{{ status_label(n.old_status) }}</td>
+        <td>{{ status_label(n.new_status) }}</td>
+        <td>{{ n.message }}</td>
+        <td>{{ n.user.login }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="6" class="text-center text-muted">Нет уведомлений.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

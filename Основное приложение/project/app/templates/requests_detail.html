@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+{% block title %}Заявка №{{ request_item.request_id }}{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3 mb-0">Заявка №{{ request_item.request_id }}</h1>
+  <div class="d-flex gap-2">
+    {% if current_user.role_name in ['admin', 'operator', 'manager'] %}
+    <a class="btn btn-primary" href="{{ url_for('requests_edit', request_id=request_item.request_id) }}">Редактировать</a>
+    {% endif %}
+    <a class="btn btn-outline-secondary" href="{{ url_for('requests_list') }}">К списку</a>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="row g-3">
+      <div class="col-md-4"><strong>Дата:</strong> {{ request_item.create_date.strftime('%d.%m.%Y') }}</div>
+      <div class="col-md-4"><strong>Статус:</strong> {{ status_label(request_item.status) }}</div>
+      <div class="col-md-4"><strong>Срок:</strong> {{ request_item.deadline_date.strftime('%d.%m.%Y') if request_item.deadline_date else '-' }}</div>
+      <div class="col-md-6"><strong>Клиент:</strong> {{ request_item.equipment.client.full_name }} ({{ request_item.equipment.client.phone }})</div>
+      <div class="col-md-6"><strong>Оборудование:</strong> {{ request_item.equipment.equipment_type }} / {{ request_item.equipment.model }} / {{ request_item.equipment.serial_number }}</div>
+      <div class="col-md-6"><strong>Ответственный:</strong> {{ request_item.master.full_name if request_item.master else '-' }}</div>
+      <div class="col-md-6"><strong>Дата завершения:</strong> {{ request_item.completion_date.strftime('%d.%m.%Y') if request_item.completion_date else '-' }}</div>
+      <div class="col-12"><strong>Описание:</strong><div class="border rounded p-2 mt-1">{{ request_item.description }}</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-lg-6">
+    <div class="card h-100">
+      <div class="card-header">Типы неисправностей</div>
+      <ul class="list-group list-group-flush">
+        {% for d in details %}
+        <li class="list-group-item">{{ d.fault_type.fault_name }}</li>
+        {% else %}
+        <li class="list-group-item text-muted">Не указаны.</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card h-100">
+      <div class="card-header">Привлеченные специалисты</div>
+      <ul class="list-group list-group-flush">
+        {% for c in collaborators %}
+        <li class="list-group-item">{{ c.master.full_name }} ({{ c.master.specialization }})</li>
+        {% else %}
+        <li class="list-group-item text-muted">Дополнительные специалисты не назначены.</li>
+        {% endfor %}
+      </ul>
+      {% if current_user.role_name in ['admin', 'manager'] %}
+      <div class="card-body border-top">
+        <form method="post" action="{{ url_for('requests_add_collaborator', request_id=request_item.request_id) }}" class="row g-2">
+          <div class="col-md-8">
+            <select class="form-select" name="master_id" required>
+              <option value="">Выберите специалиста</option>
+              {% for m in all_masters %}
+              <option value="{{ m.master_id }}">{{ m.full_name }} ({{ m.specialization }})</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-md-4 d-grid"><button class="btn btn-outline-primary">Привлечь</button></div>
+        </form>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="row g-3 mt-1">
+  <div class="col-lg-6">
+    <div class="card h-100">
+      <div class="card-header">Комментарии специалистов</div>
+      <div class="card-body comments-box">
+        {% for c in comments %}
+        <div class="border rounded p-2 mb-2">
+          <div class="small text-muted">{{ c.created_at.strftime('%d.%m.%Y %H:%M') }} | {{ c.user.login }}</div>
+          <div>{{ c.comment_text }}</div>
+        </div>
+        {% else %}
+        <div class="text-muted">Комментариев пока нет.</div>
+        {% endfor %}
+      </div>
+      {% if current_user.role_name in ['admin', 'manager', 'master'] %}
+      <div class="card-body border-top">
+        <form method="post" action="{{ url_for('requests_add_comment', request_id=request_item.request_id) }}">
+          <label class="form-label">Новый комментарий</label>
+          <textarea class="form-control mb-2" name="comment_text" rows="2" required></textarea>
+          <button class="btn btn-outline-primary">Сохранить комментарий</button>
+        </form>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card h-100">
+      <div class="card-header">Заказанные комплектующие</div>
+      <div class="table-responsive">
+        <table class="table table-sm mb-0">
+          <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Наименование</th>
+              <th>Кол-во</th>
+              <th>Примечание</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in parts %}
+            <tr>
+              <td>{{ p.ordered_at.strftime('%d.%m.%Y') }}</td>
+              <td>{{ p.part_name }}</td>
+              <td>{{ p.quantity }}</td>
+              <td>{{ p.notes or '-' }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="4" class="text-center text-muted">Комплектующие не заказывались.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% if current_user.role_name in ['admin', 'manager', 'master'] %}
+      <div class="card-body border-top">
+        <form method="post" action="{{ url_for('requests_add_part', request_id=request_item.request_id) }}" class="row g-2">
+          <div class="col-md-5"><input class="form-control" name="part_name" placeholder="Наименование" required></div>
+          <div class="col-md-2"><input class="form-control" type="number" min="1" name="quantity" placeholder="Кол-во" required></div>
+          <div class="col-md-5"><input class="form-control" name="notes" placeholder="Примечание"></div>
+          <div class="col-12"><button class="btn btn-outline-primary">Добавить комплектующие</button></div>
+        </form>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if current_user.role_name in ['admin', 'manager'] %}
+<div class="card mt-3">
+  <div class="card-header">Продление срока (менеджер по качеству)</div>
+  <div class="card-body">
+    <form method="post" action="{{ url_for('requests_extend_deadline', request_id=request_item.request_id) }}" class="row g-2 align-items-end">
+      <div class="col-md-4">
+        <label class="form-label">Новый срок</label>
+        <input class="form-control" type="date" name="deadline_date" required>
+      </div>
+      <div class="col-md-5 form-check ms-3">
+        <input class="form-check-input" type="checkbox" name="customer_approved_extension" id="approved">
+        <label class="form-check-label" for="approved">Согласовано с заказчиком</label>
+      </div>
+      <div class="col-md-2 d-grid"><button class="btn btn-warning">Продлить</button></div>
+    </form>
+  </div>
+</div>
+{% endif %}
+
+<div class="card mt-3">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span>Оценка качества</span>
+    <a class="btn btn-sm btn-outline-primary" href="{{ url_for('quality_page', request_id=request_item.request_id) }}">Открыть страницу QR</a>
+  </div>
+  <div class="card-body text-center">
+    <img src="{{ url_for('quality_qr_svg', request_id=request_item.request_id) }}" alt="QR" class="img-fluid qr-preview">
+    <div class="small text-muted mt-2">QR-код содержит ссылку на форму оценки качества сервиса.</div>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="card-header">История смены статуса</div>
+  <div class="table-responsive">
+    <table class="table table-sm mb-0">
+      <thead>
+        <tr>
+          <th>Дата</th>
+          <th>Старый статус</th>
+          <th>Новый статус</th>
+          <th>Пользователь</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for n in notifications %}
+        <tr>
+          <td>{{ n.created_at.strftime('%d.%m.%Y %H:%M') }}</td>
+          <td>{{ status_label(n.old_status) }}</td>
+          <td>{{ status_label(n.new_status) }}</td>
+          <td>{{ n.user.login }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="4" class="text-center text-muted">Изменений статуса пока нет.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

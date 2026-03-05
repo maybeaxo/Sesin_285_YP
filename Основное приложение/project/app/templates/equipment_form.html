@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}{% if equipment %}Редактирование оборудования{% else %}Новое оборудование{% endif %}{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">{% if equipment %}Редактирование оборудования{% else %}Новое оборудование{% endif %}</h1>
+
+<form method="post" class="card card-body">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Тип оборудования</label>
+      <input class="form-control" name="equipment_type" required value="{{ equipment.equipment_type if equipment else '' }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Модель</label>
+      <input class="form-control" name="model" required value="{{ equipment.model if equipment else '' }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Серийный номер</label>
+      <input class="form-control" name="serial_number" required value="{{ equipment.serial_number if equipment else '' }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Клиент</label>
+      <select class="form-select" name="client_id" required>
+        <option value="">Выберите клиента</option>
+        {% for c in clients %}
+        <option value="{{ c.client_id }}" {% if equipment and equipment.client_id == c.client_id %}selected{% endif %}>{{ c.full_name }} ({{ c.phone }})</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <div class="mt-4 d-flex gap-2">
+    <button class="btn btn-primary" type="submit">Сохранить</button>
+    <a class="btn btn-outline-secondary" href="{{ url_for('equipment_list') }}">Назад</a>
+  </div>
+</form>
+{% endblock %}

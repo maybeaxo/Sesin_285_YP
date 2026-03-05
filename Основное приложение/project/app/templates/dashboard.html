@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Панель{% endblock %}
+{% block content %}
+<h1 class="h3 mb-4">Панель управления</h1>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-6 col-xl-3"><div class="card stat-card"><div class="card-body"><div class="small text-muted">Всего заявок</div><div class="h3">{{ stats.total }}</div></div></div></div>
+  <div class="col-md-6 col-xl-3"><div class="card stat-card"><div class="card-body"><div class="small text-muted">Открытые</div><div class="h3">{{ stats.open }}</div></div></div></div>
+  <div class="col-md-6 col-xl-3"><div class="card stat-card"><div class="card-body"><div class="small text-muted">В процессе</div><div class="h3">{{ stats.in_progress }}</div></div></div></div>
+  <div class="col-md-6 col-xl-3"><div class="card stat-card"><div class="card-body"><div class="small text-muted">Завершенные</div><div class="h3">{{ stats.completed }}</div></div></div></div>
+</div>
+
+<div class="card">
+  <div class="card-header">Последние уведомления по статусам</div>
+  <div class="table-responsive">
+    <table class="table table-sm mb-0">
+      <thead>
+        <tr>
+          <th>Дата</th>
+          <th>Заявка</th>
+          <th>Изменение</th>
+          <th>Пользователь</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for n in notifications %}
+        <tr>
+          <td>{{ n.created_at.strftime('%d.%m.%Y %H:%M') }}</td>
+          <td><a href="{{ url_for('requests_detail', request_id=n.request_id) }}">№{{ n.request_id }}</a></td>
+          <td>{{ n.message }}</td>
+          <td>{{ n.user.login }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="4" class="text-center text-muted">Изменений статусов пока нет.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

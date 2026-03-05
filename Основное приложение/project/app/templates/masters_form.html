@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}{% if master %}Редактирование специалиста{% else %}Новый специалист{% endif %}{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">{% if master %}Редактирование специалиста{% else %}Новый специалист{% endif %}</h1>
+
+<form method="post" class="card card-body">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">ФИО</label>
+      <input class="form-control" name="full_name" required value="{{ master.full_name if master else '' }}">
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">Специализация</label>
+      <input class="form-control" name="specialization" required value="{{ master.specialization if master else '' }}">
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">Телефон</label>
+      <input class="form-control" name="phone" required value="{{ master.phone if master else '' }}">
+    </div>
+  </div>
+  <div class="mt-4 d-flex gap-2">
+    <button class="btn btn-primary" type="submit">Сохранить</button>
+    <a class="btn btn-outline-secondary" href="{{ url_for('masters_list') }}">Назад</a>
+  </div>
+</form>
+{% endblock %}

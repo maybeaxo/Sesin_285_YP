@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}{% if client %}Редактирование клиента{% else %}Новый клиент{% endif %}{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">{% if client %}Редактирование клиента{% else %}Новый клиент{% endif %}</h1>
+
+<form method="post" class="card card-body">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">ФИО</label>
+      <input class="form-control" name="full_name" required value="{{ client.full_name if client else '' }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Телефон</label>
+      <input class="form-control" name="phone" required value="{{ client.phone if client else '' }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input class="form-control" name="email" value="{{ client.email if client and client.email else '' }}">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Адрес</label>
+      <input class="form-control" name="address" value="{{ client.address if client and client.address else '' }}">
+    </div>
+  </div>
+  <div class="mt-4 d-flex gap-2">
+    <button class="btn btn-primary" type="submit">Сохранить</button>
+    <a class="btn btn-outline-secondary" href="{{ url_for('clients_list') }}">Назад</a>
+  </div>
+</form>
+{% endblock %}

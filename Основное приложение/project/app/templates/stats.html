@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Статистика{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">Статистика отдела обслуживания</h1>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-6">
+    <div class="card stat-card"><div class="card-body"><div class="small text-muted">Количество выполненных заявок</div><div class="h2">{{ stats.completed_count }}</div></div></div>
+  </div>
+  <div class="col-md-6">
+    <div class="card stat-card"><div class="card-body"><div class="small text-muted">Среднее время выполнения (дней)</div><div class="h2">{{ stats.average_completion_days }}</div></div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">Статистика по типам неисправностей</div>
+  <div class="table-responsive">
+    <table class="table table-striped mb-0">
+      <thead><tr><th>Тип неисправности</th><th>Количество</th></tr></thead>
+      <tbody>
+        {% for row in stats.fault_stats %}
+        <tr><td>{{ row.fault_name }}</td><td>{{ row.count }}</td></tr>
+        {% else %}
+        <tr><td colspan="2" class="text-center text-muted">Данные отсутствуют.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

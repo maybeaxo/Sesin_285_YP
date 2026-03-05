@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Отзыв{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">Локальная форма отзыва</h1>
+<div class="card card-body">
+  <form method="post" class="row g-3">
+    <div class="col-md-4">
+      <label class="form-label">Номер заявки (необязательно)</label>
+      <input class="form-control" name="request_id" type="number" min="1">
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Оценка (1-5)</label>
+      <input class="form-control" name="rating" type="number" min="1" max="5" required>
+    </div>
+    <div class="col-12">
+      <label class="form-label">Комментарий</label>
+      <textarea class="form-control" name="feedback_text" rows="3"></textarea>
+    </div>
+    <div class="col-12"><button class="btn btn-primary">Отправить отзыв</button></div>
+  </form>
+</div>
+{% endblock %}

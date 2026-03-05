@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}Заявки{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3 mb-0">Заявки на ремонт</h1>
+  {% if current_user.role_name in ['admin', 'operator', 'manager'] %}
+  <a class="btn btn-primary" href="{{ url_for('requests_new') }}">Создать заявку</a>
+  {% endif %}
+</div>
+
+<form class="row g-2 mb-3" method="get">
+  <div class="col-lg-5">
+    <input class="form-control" name="q" placeholder="Поиск по номеру, описанию, клиенту, оборудованию" value="{{ query_text }}">
+  </div>
+  <div class="col-lg-3">
+    <select class="form-select" name="status">
+      <option value="">Все статусы</option>
+      {% for st in request_statuses %}
+      <option value="{{ st }}" {% if status_filter == st %}selected{% endif %}>{{ status_label(st) }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  {% if current_user.role_name != 'master' %}
+  <div class="col-lg-3">
+    <select class="form-select" name="master_id">
+      <option value="">Все специалисты</option>
+      {% for master in masters %}
+      <option value="{{ master.master_id }}" {% if master_filter == master.master_id|string %}selected{% endif %}>{{ master.full_name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  {% endif %}
+  <div class="col-auto"><button class="btn btn-outline-secondary">Найти</button></div>
+</form>
+
+<div class="table-responsive">
+  <table class="table table-striped align-middle">
+    <thead>
+      <tr>
+        <th>Номер</th>
+        <th>Дата</th>
+        <th>Оборудование</th>
+        <th>Клиент</th>
+        <th>Специалист</th>
+        <th>Статус</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in requests_items %}
+      <tr>
+        <td>№{{ r.request_id }}</td>
+        <td>{{ r.create_date.strftime('%d.%m.%Y') }}</td>
+        <td>{{ r.equipment.equipment_type }} / {{ r.equipment.model }}</td>
+        <td>{{ r.equipment.client.full_name }}</td>
+        <td>{{ r.master.full_name if r.master else '-' }}</td>
+        <td><span class="badge bg-secondary">{{ status_label(r.status) }}</span></td>
+        <td><a class="btn btn-sm btn-outline-primary" href="{{ url_for('requests_detail', request_id=r.request_id) }}">Открыть</a></td>
+      </tr>
+      {% else %}
+      <tr><td colspan="7" class="text-center text-muted">Заявки не найдены.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

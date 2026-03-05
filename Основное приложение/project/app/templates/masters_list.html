@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Специалисты{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3 mb-0">Специалисты</h1>
+  {% if current_user.role_name in ['admin', 'manager'] %}
+  <a class="btn btn-primary" href="{{ url_for('masters_new') }}">Добавить специалиста</a>
+  {% endif %}
+</div>
+
+<form class="row g-2 mb-3" method="get">
+  <div class="col-md-6">
+    <input class="form-control" name="search" placeholder="Поиск по ФИО, специализации, телефону" value="{{ search }}">
+  </div>
+  <div class="col-auto"><button class="btn btn-outline-secondary">Найти</button></div>
+</form>
+
+<div class="table-responsive">
+  <table class="table table-striped align-middle">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>ФИО</th>
+        <th>Специализация</th>
+        <th>Телефон</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for m in masters %}
+      <tr>
+        <td>{{ m.master_id }}</td>
+        <td>{{ m.full_name }}</td>
+        <td>{{ m.specialization }}</td>
+        <td>{{ m.phone }}</td>
+        <td>
+          {% if current_user.role_name in ['admin', 'manager'] %}
+          <a class="btn btn-sm btn-outline-primary" href="{{ url_for('masters_edit', master_id=m.master_id) }}">Изменить</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% else %}
+      <tr><td colspan="5" class="text-center text-muted">Специалисты не найдены.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

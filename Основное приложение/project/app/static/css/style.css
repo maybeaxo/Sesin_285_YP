@@ -1,0 +1,196 @@
+:root {
+  --bg-1: #f3f6ff;
+  --bg-2: #eef8f5;
+  --surface: rgba(255, 255, 255, 0.9);
+  --line: #d9e3f5;
+  --text-main: #10233f;
+  --text-soft: #5f6f87;
+  --brand: #1f6feb;
+  --brand-dark: #164fab;
+  --accent: #1fbf75;
+  --danger: #d4435b;
+  --shadow: 0 14px 35px rgba(11, 33, 74, 0.08);
+}
+
+body {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 10% -10%, #d9ecff 0%, transparent 40%),
+    radial-gradient(circle at 95% 0%, #d8f5ea 0%, transparent 32%),
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+  min-height: 100vh;
+}
+
+.app-navbar {
+  background: linear-gradient(120deg, #0f2a50 0%, #173e6f 55%, #145f7a 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(6, 27, 56, 0.2);
+}
+
+.app-brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.84);
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: #fff;
+}
+
+.app-icon-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.app-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.app-badge {
+  background: var(--danger);
+  border: 2px solid #173e6f;
+  font-size: 0.62rem;
+}
+
+.app-profile-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.36rem 0.7rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.88rem;
+}
+
+.app-profile-chip .text-muted {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.app-logout-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  background: transparent;
+  padding-inline: 0.95rem;
+}
+
+.app-logout-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.app-notification-menu {
+  width: min(420px, calc(100vw - 2rem));
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  box-shadow: var(--shadow);
+}
+
+.app-notification-list {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.app-notification-item {
+  border-bottom: 1px solid #eef3fc;
+  padding: 0.8rem 0.95rem;
+}
+
+.app-notification-item:last-child {
+  border-bottom: 0;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(3px);
+}
+
+.card-header {
+  background: rgba(236, 244, 255, 0.75);
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+  border: 0;
+  box-shadow: 0 8px 20px rgba(31, 111, 235, 0.24);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #165ac2 0%, #123f8c 100%);
+}
+
+.btn-outline-primary {
+  border-color: #8fb6f3;
+  color: #174b9d;
+}
+
+.btn-outline-primary:hover {
+  background: #1f6feb;
+  border-color: #1f6feb;
+}
+
+.form-control,
+.form-select {
+  border-color: #c8d8f2;
+  border-radius: 0.65rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #7aa8ef;
+  box-shadow: 0 0 0 0.2rem rgba(31, 111, 235, 0.15);
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+
+.stat-card {
+  border: 1px solid #dbe7fb;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(243, 249, 255, 0.95));
+}
+
+.comments-box {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.qr-main {
+  width: 320px;
+  max-width: 100%;
+  border: 1px solid #dbe3f1;
+  border-radius: 0.65rem;
+  padding: 0.5rem;
+  background: #fff;
+}
+
+.qr-preview {
+  width: 180px;
+  max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .app-profile-chip {
+    display: none;
+  }
+}
