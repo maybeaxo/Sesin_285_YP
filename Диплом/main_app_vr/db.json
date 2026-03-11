@@ -1,0 +1,2102 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Half-Life: Alyx",
+      "developer": "Valve",
+      "rating": 9.5,
+      "releaseDate": "2020-03-23",
+      "description": "Возвращение легендарной серии Half-Life в виртуальной реальности. Играйте за Аликс Вэнс в захватывающем приключении.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/546560/header.jpg",
+      "video": "https://www.youtube.com/embed/O2W0N3uKXmo",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 1,
+      "ageRatingId": 1
+    },
+    {
+      "id": 2,
+      "title": "Beat Saber",
+      "developer": "Beat Games",
+      "rating": 9.2,
+      "releaseDate": "2018-05-01",
+      "description": "Ритмичная игра, где вы рубите блоки световыми мечами в такт музыке. Отличная тренировка и развлечение!",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/620980/header.jpg",
+      "video": "https://www.youtube.com/embed/0L4t3X9Qq1E",
+      "availability": true,
+      "playersLabel": "1-2 игрока",
+      "playersNum": 2,
+      "durationId": 2,
+      "ageRatingId": 2
+    },
+    {
+      "id": 3,
+      "title": "The Walking Dead: Saints & Sinners",
+      "developer": "Skydance Interactive",
+      "rating": 9,
+      "releaseDate": "2020-01-23",
+      "description": "Выживание в постапокалиптическом мире зомби. Принимайте решения, которые влияют на сюжет.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/916840/header.jpg",
+      "video": "https://www.youtube.com/embed/example3",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 3,
+      "ageRatingId": 1
+    },
+    {
+      "id": 4,
+      "title": "Superhot VR",
+      "developer": "SUPERHOT Team",
+      "rating": 8.8,
+      "releaseDate": "2017-05-25",
+      "description": "Время движется только когда вы двигаетесь. Уникальный геймплей в стиле боевика.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/617830/header.jpg",
+      "video": "https://www.youtube.com/embed/example4",
+      "availability": false,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 4,
+      "ageRatingId": 3
+    },
+    {
+      "id": 5,
+      "title": "Boneworks",
+      "developer": "Stress Level Zero",
+      "rating": 8.5,
+      "releaseDate": "2019-12-10",
+      "description": "Физический симулятор с продвинутой физикой. Исследуйте мир, решайте головоломки и сражайтесь.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/823500/header.jpg",
+      "video": "https://www.youtube.com/embed/example5",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 5,
+      "ageRatingId": 1
+    },
+    {
+      "id": 6,
+      "title": "Pistol Whip",
+      "developer": "Cloudhead Games",
+      "rating": 8.7,
+      "releaseDate": "2019-11-07",
+      "description": "Комбинация ритм-игры и шутера. Стреляйте в такт музыке, уклоняйтесь от пуль.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1079800/header.jpg",
+      "video": "https://www.youtube.com/embed/example6",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 2,
+      "ageRatingId": 3
+    },
+    {
+      "id": 7,
+      "title": "Blade & Sorcery",
+      "developer": "Warpfrog",
+      "rating": 8.3,
+      "releaseDate": "2018-12-11",
+      "description": "Реалистичный симулятор ближнего боя с магией. Сражайтесь с врагами в физическом боевике.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/629730/header.jpg",
+      "video": "https://www.youtube.com/embed/example7",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 2,
+      "ageRatingId": 1
+    },
+    {
+      "id": 8,
+      "title": "Moss",
+      "developer": "Polyarc",
+      "rating": 8.9,
+      "releaseDate": "2018-02-27",
+      "description": "Очаровательное приключение с мышкой по имени Кваррелл. Уникальная смесь платформера и головоломки.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/846470/header.jpg",
+      "video": "https://www.youtube.com/embed/example8",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 6,
+      "ageRatingId": 4
+    },
+    {
+      "id": 9,
+      "title": "Population: One",
+      "developer": "BigBox VR",
+      "rating": 8.1,
+      "releaseDate": "2020-10-22",
+      "description": "Батл-рояль в виртуальной реальности. Сражайтесь с другими игроками в масштабных битвах.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/470220/header.jpg",
+      "video": "https://www.youtube.com/embed/example9",
+      "availability": true,
+      "playersLabel": "2-6 игроков",
+      "playersNum": 6,
+      "durationId": 2,
+      "ageRatingId": 2
+    },
+    {
+      "id": 10,
+      "title": "Job Simulator",
+      "developer": "Owlchemy Labs",
+      "rating": 8.4,
+      "releaseDate": "2016-04-05",
+      "description": "Симулятор работы в будущем, где роботы заменили людей. Веселая и расслабляющая игра.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/448280/header.jpg",
+      "video": "https://www.youtube.com/embed/example10",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 4,
+      "ageRatingId": 4
+    },
+    {
+      "id": 11,
+      "title": "Asgard's Wrath",
+      "developer": "Sanzaru Games",
+      "rating": 9.1,
+      "releaseDate": "2019-10-10",
+      "description": "Эпическая RPG в скандинавской мифологии. Сражайтесь с богами и монстрами в масштабном приключении.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1121590/header.jpg",
+      "video": "https://www.youtube.com/embed/example11",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 7,
+      "ageRatingId": 3
+    },
+    {
+      "id": 12,
+      "title": "Lone Echo",
+      "developer": "Ready At Dawn",
+      "rating": 9.3,
+      "releaseDate": "2017-07-20",
+      "description": "Космическое приключение с нулевой гравитацией. Исследуйте космическую станцию и раскрывайте тайны.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/751180/header.jpg",
+      "video": "https://www.youtube.com/embed/example12",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 8,
+      "ageRatingId": 2
+    },
+    {
+      "id": 13,
+      "title": "Arizona Sunshine",
+      "developer": "Vertigo Games",
+      "rating": 8.2,
+      "releaseDate": "2016-12-06",
+      "description": "Выживание в пустыне Аризоны, полной зомби. Кооперативный режим для 2-4 игроков.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/342180/header.jpg",
+      "video": "https://www.youtube.com/embed/example13",
+      "availability": true,
+      "playersLabel": "1-4 игрока",
+      "playersNum": 4,
+      "durationId": 6,
+      "ageRatingId": 1
+    },
+    {
+      "id": 14,
+      "title": "The Elder Scrolls V: Skyrim VR",
+      "developer": "Bethesda Game Studios",
+      "rating": 8.6,
+      "releaseDate": "2017-11-17",
+      "description": "Легендарная RPG теперь в виртуальной реальности. Исследуйте огромный мир Скайрима в VR.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/611670/header.jpg",
+      "video": "https://www.youtube.com/embed/example14",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 9,
+      "ageRatingId": 1
+    },
+    {
+      "id": 15,
+      "title": "Vader Immortal",
+      "developer": "ILMxLAB",
+      "rating": 8.5,
+      "releaseDate": "2019-05-21",
+      "description": "Эпическое приключение в мире Звездных Войн. Сражайтесь с Дартом Вейдером и изучайте Силу.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1047550/header.jpg",
+      "video": "https://www.youtube.com/embed/example15",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 10,
+      "ageRatingId": 2
+    },
+    {
+      "id": 16,
+      "title": "Gorn",
+      "developer": "Free Lives",
+      "rating": 8.4,
+      "releaseDate": "2019-07-18",
+      "description": "Кровавый гладиаторский симулятор с преувеличенной физикой. Сражайтесь на арене в стиле мультфильма.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/578620/header.jpg",
+      "video": "https://www.youtube.com/embed/example16",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 4,
+      "ageRatingId": 1
+    },
+    {
+      "id": 17,
+      "title": "Until You Fall",
+      "developer": "Schell Games",
+      "rating": 8.6,
+      "releaseDate": "2020-09-24",
+      "description": "Ритмичный боевик с элементами рогалика. Сражайтесь с монстрами в такт музыке.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/858820/header.jpg",
+      "video": "https://www.youtube.com/embed/example17",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 2,
+      "ageRatingId": 2
+    },
+    {
+      "id": 18,
+      "title": "I Expect You To Die",
+      "developer": "Schell Games",
+      "rating": 8.7,
+      "releaseDate": "2016-12-13",
+      "description": "Шпионская головоломка в стиле Джеймса Бонда. Решайте загадки и выживайте в опасных ситуациях.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/449860/header.jpg",
+      "video": "https://www.youtube.com/embed/example18",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 4,
+      "ageRatingId": 2
+    },
+    {
+      "id": 19,
+      "title": "Onward",
+      "developer": "Downpour Interactive",
+      "rating": 8.3,
+      "releaseDate": "2016-08-30",
+      "description": "Реалистичный тактический шутер с командной игрой. Координируйте действия с товарищами.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/496240/header.jpg",
+      "video": "https://www.youtube.com/embed/example19",
+      "availability": true,
+      "playersLabel": "2-10 игроков",
+      "playersNum": 10,
+      "durationId": 2,
+      "ageRatingId": 3
+    },
+    {
+      "id": 20,
+      "title": "The Room VR: A Dark Matter",
+      "developer": "Fireproof Games",
+      "rating": 8.8,
+      "releaseDate": "2020-03-26",
+      "description": "Загадочная головоломка в викторианском стиле. Исследуйте комнаты и разгадывайте тайны.",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/984520/header.jpg",
+      "video": "https://www.youtube.com/embed/example20",
+      "availability": true,
+      "playersLabel": "1 игрок",
+      "playersNum": 1,
+      "durationId": 6,
+      "ageRatingId": 2
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Экшен"
+    },
+    {
+      "id": 2,
+      "name": "Приключения"
+    },
+    {
+      "id": 3,
+      "name": "Шутер"
+    },
+    {
+      "id": 4,
+      "name": "Ритм"
+    },
+    {
+      "id": 5,
+      "name": "Музыка"
+    },
+    {
+      "id": 6,
+      "name": "Аркада"
+    },
+    {
+      "id": 7,
+      "name": "Выживание"
+    },
+    {
+      "id": 8,
+      "name": "Хоррор"
+    },
+    {
+      "id": 9,
+      "name": "Головоломка"
+    },
+    {
+      "id": 10,
+      "name": "Инди"
+    },
+    {
+      "id": 11,
+      "name": "Физика"
+    },
+    {
+      "id": 12,
+      "name": "Песочница"
+    },
+    {
+      "id": 13,
+      "name": "Платформер"
+    },
+    {
+      "id": 14,
+      "name": "Батл-рояль"
+    },
+    {
+      "id": 15,
+      "name": "Мультиплеер"
+    },
+    {
+      "id": 16,
+      "name": "Симулятор"
+    },
+    {
+      "id": 17,
+      "name": "Юмор"
+    },
+    {
+      "id": 18,
+      "name": "Семейная"
+    },
+    {
+      "id": 19,
+      "name": "РПГ"
+    },
+    {
+      "id": 20,
+      "name": "Научная фантастика"
+    },
+    {
+      "id": 21,
+      "name": "Открытый мир"
+    },
+    {
+      "id": 22,
+      "name": "Рогалик"
+    },
+    {
+      "id": 23,
+      "name": "Тактический шутер"
+    },
+    {
+      "id": 24,
+      "name": "Мистика"
+    }
+  ],
+  "platforms": [
+    {
+      "id": 1,
+      "name": "PC VR"
+    },
+    {
+      "id": 2,
+      "name": "SteamVR"
+    },
+    {
+      "id": 3,
+      "name": "Quest"
+    },
+    {
+      "id": 4,
+      "name": "PSVR"
+    }
+  ],
+  "languages": [
+    {
+      "id": 1,
+      "name": "Русский"
+    },
+    {
+      "id": 2,
+      "name": "Английский"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "Одиночная игра"
+    },
+    {
+      "id": 2,
+      "name": "Полная поддержка VR"
+    },
+    {
+      "id": 3,
+      "name": "Физика взаимодействия"
+    },
+    {
+      "id": 4,
+      "name": "Мультиплеер"
+    },
+    {
+      "id": 5,
+      "name": "Кастомизация"
+    },
+    {
+      "id": 6,
+      "name": "Мод-поддержка"
+    },
+    {
+      "id": 7,
+      "name": "Открытый мир"
+    },
+    {
+      "id": 8,
+      "name": "Выбор и последствия"
+    },
+    {
+      "id": 9,
+      "name": "Уникальная механика"
+    },
+    {
+      "id": 10,
+      "name": "Короткие сессии"
+    },
+    {
+      "id": 11,
+      "name": "Продвинутая физика"
+    },
+    {
+      "id": 12,
+      "name": "Ритм-геймплей"
+    },
+    {
+      "id": 13,
+      "name": "Множество уровней"
+    },
+    {
+      "id": 14,
+      "name": "Песочница"
+    },
+    {
+      "id": 15,
+      "name": "Физический бой"
+    },
+    {
+      "id": 16,
+      "name": "Семейная игра"
+    },
+    {
+      "id": 17,
+      "name": "Красивая графика"
+    },
+    {
+      "id": 18,
+      "name": "Бесплатная игра"
+    },
+    {
+      "id": 19,
+      "name": "Постоянные обновления"
+    },
+    {
+      "id": 20,
+      "name": "Юмор"
+    },
+    {
+      "id": 21,
+      "name": "Интерактивность"
+    },
+    {
+      "id": 22,
+      "name": "РПГ"
+    },
+    {
+      "id": 23,
+      "name": "Эпический сюжет"
+    },
+    {
+      "id": 24,
+      "name": "Нулевая гравитация"
+    },
+    {
+      "id": 25,
+      "name": "Эмоциональный сюжет"
+    },
+    {
+      "id": 26,
+      "name": "Кооператив"
+    },
+    {
+      "id": 27,
+      "name": "Хоррор"
+    },
+    {
+      "id": 28,
+      "name": "Звездные Войны"
+    },
+    {
+      "id": 29,
+      "name": "Экшен"
+    },
+    {
+      "id": 30,
+      "name": "Физика"
+    },
+    {
+      "id": 31,
+      "name": "Гладиаторские бои"
+    },
+    {
+      "id": 32,
+      "name": "Рогалик"
+    },
+    {
+      "id": 33,
+      "name": "Головоломки"
+    },
+    {
+      "id": 34,
+      "name": "Шпионский сюжет"
+    },
+    {
+      "id": 35,
+      "name": "Тактический"
+    },
+    {
+      "id": 36,
+      "name": "Реалистичная физика"
+    },
+    {
+      "id": 37,
+      "name": "Мистика"
+    }
+  ],
+  "ageRatings": [
+    {
+      "id": 1,
+      "label": "18+",
+      "numericValue": 18
+    },
+    {
+      "id": 2,
+      "label": "12+",
+      "numericValue": 12
+    },
+    {
+      "id": 3,
+      "label": "16+",
+      "numericValue": 16
+    },
+    {
+      "id": 4,
+      "label": "6+",
+      "numericValue": 6
+    }
+  ],
+  "durations": [
+    {
+      "id": 1,
+      "label": "15-20 часов",
+      "minutes": 1050
+    },
+    {
+      "id": 2,
+      "label": "Бесконечная",
+      "minutes": 9999
+    },
+    {
+      "id": 3,
+      "label": "12-15 часов",
+      "minutes": 810
+    },
+    {
+      "id": 4,
+      "label": "3-4 часа",
+      "minutes": 210
+    },
+    {
+      "id": 5,
+      "label": "8-10 часов",
+      "minutes": 540
+    },
+    {
+      "id": 6,
+      "label": "4-5 часов",
+      "minutes": 270
+    },
+    {
+      "id": 7,
+      "label": "30-40 часов",
+      "minutes": 2100
+    },
+    {
+      "id": 8,
+      "label": "6-8 часов",
+      "minutes": 420
+    },
+    {
+      "id": 9,
+      "label": "100+ часов",
+      "minutes": 6000
+    },
+    {
+      "id": 10,
+      "label": "2-3 часа",
+      "minutes": 150
+    }
+  ],
+  "screenshots": [
+    {
+      "id": 1,
+      "gameId": 1,
+      "url": "/images/screenshots/half-life-alyx-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "gameId": 1,
+      "url": "/images/screenshots/half-life-alyx-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "gameId": 1,
+      "url": "/images/screenshots/half-life-alyx-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "gameId": 1,
+      "url": "/images/screenshots/half-life-alyx-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "gameId": 1,
+      "url": "/images/screenshots/half-life-alyx-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 6,
+      "gameId": 2,
+      "url": "/images/screenshots/beat-saber-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 7,
+      "gameId": 2,
+      "url": "/images/screenshots/beat-saber-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 8,
+      "gameId": 2,
+      "url": "/images/screenshots/beat-saber-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 9,
+      "gameId": 2,
+      "url": "/images/screenshots/beat-saber-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 10,
+      "gameId": 2,
+      "url": "/images/screenshots/beat-saber-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 11,
+      "gameId": 3,
+      "url": "/images/screenshots/walking-dead-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 12,
+      "gameId": 3,
+      "url": "/images/screenshots/walking-dead-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 13,
+      "gameId": 3,
+      "url": "/images/screenshots/walking-dead-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 14,
+      "gameId": 3,
+      "url": "/images/screenshots/walking-dead-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 15,
+      "gameId": 3,
+      "url": "/images/screenshots/walking-dead-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 16,
+      "gameId": 4,
+      "url": "/images/screenshots/superhot-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 17,
+      "gameId": 4,
+      "url": "/images/screenshots/superhot-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 18,
+      "gameId": 4,
+      "url": "/images/screenshots/superhot-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 19,
+      "gameId": 4,
+      "url": "/images/screenshots/superhot-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 20,
+      "gameId": 4,
+      "url": "/images/screenshots/superhot-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 21,
+      "gameId": 5,
+      "url": "/images/screenshots/boneworks-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 22,
+      "gameId": 5,
+      "url": "/images/screenshots/boneworks-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 23,
+      "gameId": 5,
+      "url": "/images/screenshots/boneworks-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 24,
+      "gameId": 5,
+      "url": "/images/screenshots/boneworks-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 25,
+      "gameId": 5,
+      "url": "/images/screenshots/boneworks-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 26,
+      "gameId": 6,
+      "url": "/images/screenshots/pistol-whip-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 27,
+      "gameId": 6,
+      "url": "/images/screenshots/pistol-whip-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 28,
+      "gameId": 6,
+      "url": "/images/screenshots/pistol-whip-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 29,
+      "gameId": 6,
+      "url": "/images/screenshots/pistol-whip-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 30,
+      "gameId": 6,
+      "url": "/images/screenshots/pistol-whip-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 31,
+      "gameId": 7,
+      "url": "/images/screenshots/blade-sorcery-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 32,
+      "gameId": 7,
+      "url": "/images/screenshots/blade-sorcery-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 33,
+      "gameId": 7,
+      "url": "/images/screenshots/blade-sorcery-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 34,
+      "gameId": 7,
+      "url": "/images/screenshots/blade-sorcery-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 35,
+      "gameId": 7,
+      "url": "/images/screenshots/blade-sorcery-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 36,
+      "gameId": 8,
+      "url": "/images/screenshots/moss-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 37,
+      "gameId": 8,
+      "url": "/images/screenshots/moss-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 38,
+      "gameId": 8,
+      "url": "/images/screenshots/moss-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 39,
+      "gameId": 8,
+      "url": "/images/screenshots/moss-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 40,
+      "gameId": 8,
+      "url": "/images/screenshots/moss-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 41,
+      "gameId": 9,
+      "url": "/images/screenshots/blade-sorcery-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 42,
+      "gameId": 9,
+      "url": "/images/screenshots/blade-sorcery-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 43,
+      "gameId": 9,
+      "url": "/images/screenshots/blade-sorcery-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 44,
+      "gameId": 9,
+      "url": "/images/screenshots/blade-sorcery-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 45,
+      "gameId": 9,
+      "url": "/images/screenshots/blade-sorcery-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 46,
+      "gameId": 10,
+      "url": "/images/screenshots/job-simulator-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 47,
+      "gameId": 10,
+      "url": "/images/screenshots/job-simulator-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 48,
+      "gameId": 10,
+      "url": "/images/screenshots/job-simulator-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 49,
+      "gameId": 10,
+      "url": "/images/screenshots/job-simulator-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 50,
+      "gameId": 10,
+      "url": "/images/screenshots/job-simulator-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 51,
+      "gameId": 11,
+      "url": "/images/screenshots/half-life-alyx-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 52,
+      "gameId": 11,
+      "url": "/images/screenshots/half-life-alyx-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 53,
+      "gameId": 11,
+      "url": "/images/screenshots/half-life-alyx-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 54,
+      "gameId": 11,
+      "url": "/images/screenshots/half-life-alyx-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 55,
+      "gameId": 11,
+      "url": "/images/screenshots/half-life-alyx-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 56,
+      "gameId": 12,
+      "url": "/images/screenshots/superhot-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 57,
+      "gameId": 12,
+      "url": "/images/screenshots/superhot-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 58,
+      "gameId": 12,
+      "url": "/images/screenshots/superhot-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 59,
+      "gameId": 12,
+      "url": "/images/screenshots/superhot-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 60,
+      "gameId": 12,
+      "url": "/images/screenshots/superhot-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 61,
+      "gameId": 13,
+      "url": "/images/screenshots/arizona-sunshine-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 62,
+      "gameId": 13,
+      "url": "/images/screenshots/arizona-sunshine-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 63,
+      "gameId": 13,
+      "url": "/images/screenshots/arizona-sunshine-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 64,
+      "gameId": 13,
+      "url": "/images/screenshots/arizona-sunshine-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 65,
+      "gameId": 13,
+      "url": "/images/screenshots/arizona-sunshine-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 66,
+      "gameId": 14,
+      "url": "/images/screenshots/skyrim-vr-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 67,
+      "gameId": 14,
+      "url": "/images/screenshots/skyrim-vr-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 68,
+      "gameId": 14,
+      "url": "/images/screenshots/skyrim-vr-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 69,
+      "gameId": 14,
+      "url": "/images/screenshots/skyrim-vr-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 70,
+      "gameId": 14,
+      "url": "/images/screenshots/skyrim-vr-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 71,
+      "gameId": 15,
+      "url": "/images/screenshots/superhot-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 72,
+      "gameId": 15,
+      "url": "/images/screenshots/superhot-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 73,
+      "gameId": 15,
+      "url": "/images/screenshots/superhot-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 74,
+      "gameId": 15,
+      "url": "/images/screenshots/superhot-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 75,
+      "gameId": 15,
+      "url": "/images/screenshots/superhot-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 76,
+      "gameId": 16,
+      "url": "/images/screenshots/gorn-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 77,
+      "gameId": 16,
+      "url": "/images/screenshots/gorn-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 78,
+      "gameId": 16,
+      "url": "/images/screenshots/gorn-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 79,
+      "gameId": 16,
+      "url": "/images/screenshots/gorn-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 80,
+      "gameId": 16,
+      "url": "/images/screenshots/gorn-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 81,
+      "gameId": 17,
+      "url": "/images/screenshots/pistol-whip-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 82,
+      "gameId": 17,
+      "url": "/images/screenshots/pistol-whip-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 83,
+      "gameId": 17,
+      "url": "/images/screenshots/pistol-whip-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 84,
+      "gameId": 17,
+      "url": "/images/screenshots/pistol-whip-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 85,
+      "gameId": 17,
+      "url": "/images/screenshots/pistol-whip-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 86,
+      "gameId": 18,
+      "url": "/images/screenshots/superhot-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 87,
+      "gameId": 18,
+      "url": "/images/screenshots/superhot-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 88,
+      "gameId": 18,
+      "url": "/images/screenshots/superhot-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 89,
+      "gameId": 18,
+      "url": "/images/screenshots/superhot-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 90,
+      "gameId": 18,
+      "url": "/images/screenshots/superhot-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 91,
+      "gameId": 19,
+      "url": "/images/screenshots/onward-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 92,
+      "gameId": 19,
+      "url": "/images/screenshots/onward-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 93,
+      "gameId": 19,
+      "url": "/images/screenshots/onward-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 94,
+      "gameId": 19,
+      "url": "/images/screenshots/onward-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 95,
+      "gameId": 19,
+      "url": "/images/screenshots/onward-5.jpg",
+      "order": 5
+    },
+    {
+      "id": 96,
+      "gameId": 20,
+      "url": "/images/screenshots/job-simulator-1.jpg",
+      "order": 1
+    },
+    {
+      "id": 97,
+      "gameId": 20,
+      "url": "/images/screenshots/job-simulator-2.jpg",
+      "order": 2
+    },
+    {
+      "id": 98,
+      "gameId": 20,
+      "url": "/images/screenshots/job-simulator-3.jpg",
+      "order": 3
+    },
+    {
+      "id": 99,
+      "gameId": 20,
+      "url": "/images/screenshots/job-simulator-4.jpg",
+      "order": 4
+    },
+    {
+      "id": 100,
+      "gameId": 20,
+      "url": "/images/screenshots/job-simulator-5.jpg",
+      "order": 5
+    }
+  ],
+  "promoBanners": [
+    {
+      "id": 1,
+      "title": "Новые игры каждую неделю!",
+      "image": "/images/screenshots/half-life-alyx-1.jpg",
+      "link": null
+    },
+    {
+      "id": 2,
+      "title": "Скидка 20% на групповые сессии",
+      "image": "/images/screenshots/beat-saber-1.jpg",
+      "link": null
+    }
+  ],
+  "gameGenres": [
+    {
+      "gameId": 1,
+      "genreId": 1
+    },
+    {
+      "gameId": 1,
+      "genreId": 2
+    },
+    {
+      "gameId": 1,
+      "genreId": 3
+    },
+    {
+      "gameId": 2,
+      "genreId": 4
+    },
+    {
+      "gameId": 2,
+      "genreId": 5
+    },
+    {
+      "gameId": 2,
+      "genreId": 6
+    },
+    {
+      "gameId": 3,
+      "genreId": 7
+    },
+    {
+      "gameId": 3,
+      "genreId": 8
+    },
+    {
+      "gameId": 3,
+      "genreId": 1
+    },
+    {
+      "gameId": 4,
+      "genreId": 1
+    },
+    {
+      "gameId": 4,
+      "genreId": 9
+    },
+    {
+      "gameId": 4,
+      "genreId": 10
+    },
+    {
+      "gameId": 5,
+      "genreId": 1
+    },
+    {
+      "gameId": 5,
+      "genreId": 11
+    },
+    {
+      "gameId": 5,
+      "genreId": 2
+    },
+    {
+      "gameId": 6,
+      "genreId": 1
+    },
+    {
+      "gameId": 6,
+      "genreId": 4
+    },
+    {
+      "gameId": 6,
+      "genreId": 3
+    },
+    {
+      "gameId": 7,
+      "genreId": 1
+    },
+    {
+      "gameId": 7,
+      "genreId": 11
+    },
+    {
+      "gameId": 7,
+      "genreId": 12
+    },
+    {
+      "gameId": 8,
+      "genreId": 2
+    },
+    {
+      "gameId": 8,
+      "genreId": 13
+    },
+    {
+      "gameId": 8,
+      "genreId": 9
+    },
+    {
+      "gameId": 9,
+      "genreId": 14
+    },
+    {
+      "gameId": 9,
+      "genreId": 15
+    },
+    {
+      "gameId": 9,
+      "genreId": 1
+    },
+    {
+      "gameId": 10,
+      "genreId": 16
+    },
+    {
+      "gameId": 10,
+      "genreId": 17
+    },
+    {
+      "gameId": 10,
+      "genreId": 18
+    },
+    {
+      "gameId": 11,
+      "genreId": 19
+    },
+    {
+      "gameId": 11,
+      "genreId": 1
+    },
+    {
+      "gameId": 11,
+      "genreId": 2
+    },
+    {
+      "gameId": 12,
+      "genreId": 2
+    },
+    {
+      "gameId": 12,
+      "genreId": 20
+    },
+    {
+      "gameId": 12,
+      "genreId": 9
+    },
+    {
+      "gameId": 13,
+      "genreId": 7
+    },
+    {
+      "gameId": 13,
+      "genreId": 8
+    },
+    {
+      "gameId": 13,
+      "genreId": 1
+    },
+    {
+      "gameId": 14,
+      "genreId": 19
+    },
+    {
+      "gameId": 14,
+      "genreId": 21
+    },
+    {
+      "gameId": 14,
+      "genreId": 2
+    },
+    {
+      "gameId": 15,
+      "genreId": 2
+    },
+    {
+      "gameId": 15,
+      "genreId": 1
+    },
+    {
+      "gameId": 15,
+      "genreId": 20
+    },
+    {
+      "gameId": 16,
+      "genreId": 1
+    },
+    {
+      "gameId": 16,
+      "genreId": 17
+    },
+    {
+      "gameId": 16,
+      "genreId": 11
+    },
+    {
+      "gameId": 17,
+      "genreId": 1
+    },
+    {
+      "gameId": 17,
+      "genreId": 22
+    },
+    {
+      "gameId": 17,
+      "genreId": 4
+    },
+    {
+      "gameId": 18,
+      "genreId": 9
+    },
+    {
+      "gameId": 18,
+      "genreId": 2
+    },
+    {
+      "gameId": 18,
+      "genreId": 17
+    },
+    {
+      "gameId": 19,
+      "genreId": 23
+    },
+    {
+      "gameId": 19,
+      "genreId": 15
+    },
+    {
+      "gameId": 19,
+      "genreId": 1
+    },
+    {
+      "gameId": 20,
+      "genreId": 9
+    },
+    {
+      "gameId": 20,
+      "genreId": 2
+    },
+    {
+      "gameId": 20,
+      "genreId": 24
+    }
+  ],
+  "gamePlatforms": [
+    {
+      "gameId": 1,
+      "platformId": 1
+    },
+    {
+      "gameId": 1,
+      "platformId": 2
+    },
+    {
+      "gameId": 2,
+      "platformId": 1
+    },
+    {
+      "gameId": 2,
+      "platformId": 3
+    },
+    {
+      "gameId": 2,
+      "platformId": 4
+    },
+    {
+      "gameId": 3,
+      "platformId": 1
+    },
+    {
+      "gameId": 3,
+      "platformId": 3
+    },
+    {
+      "gameId": 3,
+      "platformId": 4
+    },
+    {
+      "gameId": 4,
+      "platformId": 1
+    },
+    {
+      "gameId": 4,
+      "platformId": 3
+    },
+    {
+      "gameId": 4,
+      "platformId": 4
+    },
+    {
+      "gameId": 5,
+      "platformId": 1
+    },
+    {
+      "gameId": 5,
+      "platformId": 2
+    },
+    {
+      "gameId": 6,
+      "platformId": 1
+    },
+    {
+      "gameId": 6,
+      "platformId": 3
+    },
+    {
+      "gameId": 6,
+      "platformId": 4
+    },
+    {
+      "gameId": 7,
+      "platformId": 1
+    },
+    {
+      "gameId": 7,
+      "platformId": 3
+    },
+    {
+      "gameId": 8,
+      "platformId": 1
+    },
+    {
+      "gameId": 8,
+      "platformId": 3
+    },
+    {
+      "gameId": 8,
+      "platformId": 4
+    },
+    {
+      "gameId": 9,
+      "platformId": 1
+    },
+    {
+      "gameId": 9,
+      "platformId": 3
+    },
+    {
+      "gameId": 10,
+      "platformId": 1
+    },
+    {
+      "gameId": 10,
+      "platformId": 3
+    },
+    {
+      "gameId": 10,
+      "platformId": 4
+    },
+    {
+      "gameId": 11,
+      "platformId": 1
+    },
+    {
+      "gameId": 11,
+      "platformId": 3
+    },
+    {
+      "gameId": 12,
+      "platformId": 1
+    },
+    {
+      "gameId": 13,
+      "platformId": 1
+    },
+    {
+      "gameId": 13,
+      "platformId": 3
+    },
+    {
+      "gameId": 13,
+      "platformId": 4
+    },
+    {
+      "gameId": 14,
+      "platformId": 1
+    },
+    {
+      "gameId": 14,
+      "platformId": 4
+    },
+    {
+      "gameId": 15,
+      "platformId": 1
+    },
+    {
+      "gameId": 15,
+      "platformId": 3
+    },
+    {
+      "gameId": 15,
+      "platformId": 4
+    },
+    {
+      "gameId": 16,
+      "platformId": 1
+    },
+    {
+      "gameId": 16,
+      "platformId": 3
+    },
+    {
+      "gameId": 16,
+      "platformId": 4
+    },
+    {
+      "gameId": 17,
+      "platformId": 1
+    },
+    {
+      "gameId": 17,
+      "platformId": 3
+    },
+    {
+      "gameId": 17,
+      "platformId": 4
+    },
+    {
+      "gameId": 18,
+      "platformId": 1
+    },
+    {
+      "gameId": 18,
+      "platformId": 3
+    },
+    {
+      "gameId": 18,
+      "platformId": 4
+    },
+    {
+      "gameId": 19,
+      "platformId": 1
+    },
+    {
+      "gameId": 19,
+      "platformId": 3
+    },
+    {
+      "gameId": 20,
+      "platformId": 1
+    },
+    {
+      "gameId": 20,
+      "platformId": 3
+    },
+    {
+      "gameId": 20,
+      "platformId": 4
+    }
+  ],
+  "gameLanguages": [
+    {
+      "gameId": 1,
+      "languageId": 1
+    },
+    {
+      "gameId": 1,
+      "languageId": 2
+    },
+    {
+      "gameId": 2,
+      "languageId": 1
+    },
+    {
+      "gameId": 2,
+      "languageId": 2
+    },
+    {
+      "gameId": 3,
+      "languageId": 1
+    },
+    {
+      "gameId": 3,
+      "languageId": 2
+    },
+    {
+      "gameId": 4,
+      "languageId": 1
+    },
+    {
+      "gameId": 4,
+      "languageId": 2
+    },
+    {
+      "gameId": 5,
+      "languageId": 2
+    },
+    {
+      "gameId": 6,
+      "languageId": 1
+    },
+    {
+      "gameId": 6,
+      "languageId": 2
+    },
+    {
+      "gameId": 7,
+      "languageId": 2
+    },
+    {
+      "gameId": 8,
+      "languageId": 1
+    },
+    {
+      "gameId": 8,
+      "languageId": 2
+    },
+    {
+      "gameId": 9,
+      "languageId": 1
+    },
+    {
+      "gameId": 9,
+      "languageId": 2
+    },
+    {
+      "gameId": 10,
+      "languageId": 1
+    },
+    {
+      "gameId": 10,
+      "languageId": 2
+    },
+    {
+      "gameId": 11,
+      "languageId": 2
+    },
+    {
+      "gameId": 12,
+      "languageId": 2
+    },
+    {
+      "gameId": 13,
+      "languageId": 1
+    },
+    {
+      "gameId": 13,
+      "languageId": 2
+    },
+    {
+      "gameId": 14,
+      "languageId": 1
+    },
+    {
+      "gameId": 14,
+      "languageId": 2
+    },
+    {
+      "gameId": 15,
+      "languageId": 1
+    },
+    {
+      "gameId": 15,
+      "languageId": 2
+    },
+    {
+      "gameId": 16,
+      "languageId": 2
+    },
+    {
+      "gameId": 17,
+      "languageId": 1
+    },
+    {
+      "gameId": 17,
+      "languageId": 2
+    },
+    {
+      "gameId": 18,
+      "languageId": 1
+    },
+    {
+      "gameId": 18,
+      "languageId": 2
+    },
+    {
+      "gameId": 19,
+      "languageId": 1
+    },
+    {
+      "gameId": 19,
+      "languageId": 2
+    },
+    {
+      "gameId": 20,
+      "languageId": 1
+    },
+    {
+      "gameId": 20,
+      "languageId": 2
+    }
+  ],
+  "gameFeatures": [
+    {
+      "gameId": 1,
+      "featureId": 1
+    },
+    {
+      "gameId": 1,
+      "featureId": 2
+    },
+    {
+      "gameId": 1,
+      "featureId": 3
+    },
+    {
+      "gameId": 2,
+      "featureId": 4
+    },
+    {
+      "gameId": 2,
+      "featureId": 5
+    },
+    {
+      "gameId": 2,
+      "featureId": 6
+    },
+    {
+      "gameId": 3,
+      "featureId": 1
+    },
+    {
+      "gameId": 3,
+      "featureId": 7
+    },
+    {
+      "gameId": 3,
+      "featureId": 8
+    },
+    {
+      "gameId": 4,
+      "featureId": 1
+    },
+    {
+      "gameId": 4,
+      "featureId": 9
+    },
+    {
+      "gameId": 4,
+      "featureId": 10
+    },
+    {
+      "gameId": 5,
+      "featureId": 11
+    },
+    {
+      "gameId": 5,
+      "featureId": 1
+    },
+    {
+      "gameId": 5,
+      "featureId": 6
+    },
+    {
+      "gameId": 6,
+      "featureId": 12
+    },
+    {
+      "gameId": 6,
+      "featureId": 13
+    },
+    {
+      "gameId": 6,
+      "featureId": 5
+    },
+    {
+      "gameId": 7,
+      "featureId": 14
+    },
+    {
+      "gameId": 7,
+      "featureId": 6
+    },
+    {
+      "gameId": 7,
+      "featureId": 15
+    },
+    {
+      "gameId": 8,
+      "featureId": 1
+    },
+    {
+      "gameId": 8,
+      "featureId": 16
+    },
+    {
+      "gameId": 8,
+      "featureId": 17
+    },
+    {
+      "gameId": 9,
+      "featureId": 4
+    },
+    {
+      "gameId": 9,
+      "featureId": 18
+    },
+    {
+      "gameId": 9,
+      "featureId": 19
+    },
+    {
+      "gameId": 10,
+      "featureId": 16
+    },
+    {
+      "gameId": 10,
+      "featureId": 20
+    },
+    {
+      "gameId": 10,
+      "featureId": 21
+    },
+    {
+      "gameId": 11,
+      "featureId": 22
+    },
+    {
+      "gameId": 11,
+      "featureId": 7
+    },
+    {
+      "gameId": 11,
+      "featureId": 23
+    },
+    {
+      "gameId": 12,
+      "featureId": 24
+    },
+    {
+      "gameId": 12,
+      "featureId": 25
+    },
+    {
+      "gameId": 12,
+      "featureId": 17
+    },
+    {
+      "gameId": 13,
+      "featureId": 26
+    },
+    {
+      "gameId": 13,
+      "featureId": 27
+    },
+    {
+      "gameId": 13,
+      "featureId": 4
+    },
+    {
+      "gameId": 14,
+      "featureId": 7
+    },
+    {
+      "gameId": 14,
+      "featureId": 22
+    },
+    {
+      "gameId": 14,
+      "featureId": 6
+    },
+    {
+      "gameId": 15,
+      "featureId": 28
+    },
+    {
+      "gameId": 15,
+      "featureId": 29
+    },
+    {
+      "gameId": 15,
+      "featureId": 23
+    },
+    {
+      "gameId": 16,
+      "featureId": 30
+    },
+    {
+      "gameId": 16,
+      "featureId": 20
+    },
+    {
+      "gameId": 16,
+      "featureId": 31
+    },
+    {
+      "gameId": 17,
+      "featureId": 12
+    },
+    {
+      "gameId": 17,
+      "featureId": 32
+    },
+    {
+      "gameId": 17,
+      "featureId": 5
+    },
+    {
+      "gameId": 18,
+      "featureId": 33
+    },
+    {
+      "gameId": 18,
+      "featureId": 34
+    },
+    {
+      "gameId": 18,
+      "featureId": 20
+    },
+    {
+      "gameId": 19,
+      "featureId": 35
+    },
+    {
+      "gameId": 19,
+      "featureId": 4
+    },
+    {
+      "gameId": 19,
+      "featureId": 36
+    },
+    {
+      "gameId": 20,
+      "featureId": 33
+    },
+    {
+      "gameId": 20,
+      "featureId": 37
+    },
+    {
+      "gameId": 20,
+      "featureId": 17
+    }
+  ]
+}
