@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.1">
+  <diagram id="ui-mockups" name="UI Mockups">
+    <mxGraphModel dx="946" dy="636" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="home-frame" parent="1" style="shape=swimlane;horizontal=0;rounded=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="HomeScreen&#xa;(Главный экран)">
+          <mxGeometry height="260" width="300" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="home-logo" parent="home-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#666666;fontSize=10;" value="Логотип WARPOINT" vertex="1">
+          <mxGeometry height="40" width="240" x="30" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="home-title" parent="home-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=10;" value="Заголовок / слоган" vertex="1">
+          <mxGeometry height="40" width="240" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="home-button" parent="home-frame" style="shape=rectangle;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="Кнопка: &quot;Выбрать игру&quot;" vertex="1">
+          <mxGeometry height="40" width="160" x="70" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="home-hint" parent="home-frame" style="shape=text;fontSize=9;align=center;verticalAlign=top;" value="Подсказка: удержание угла для входа в админку">
+          <mxGeometry height="30" width="260" x="20" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="list-frame" parent="1" style="shape=swimlane;horizontal=0;rounded=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="GameList + Header&#xa;(Каталог игр)">
+          <mxGeometry height="320" width="340" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="list-header" parent="list-frame" style="shape=rectangle;rounded=0;fillColor=#ffffff;strokeColor=#cccccc;fontSize=9;align=left;verticalAlign=top;" value="Шапка: поиск, фильтры (жанр, платформа, возраст, длительность), &#xa;кнопки Назад и Админ" vertex="1">
+          <mxGeometry height="70" width="320" x="10" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="list-card1" parent="list-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#999999;fontSize=9;align=left;verticalAlign=top;" value="Карточка игры&#xa;(обложка, название, рейтинг, &#xa;кнопка &quot;Подробнее&quot;)" vertex="1">
+          <mxGeometry height="80" width="150" x="10" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="list-card2" parent="list-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#999999;fontSize=9;" value="Карточка игры" vertex="1">
+          <mxGeometry height="80" width="150" x="180" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="list-scroll" parent="list-frame" style="shape=text;fontSize=9;align=center;verticalAlign=top;" value="Список игр, прокрутка по вертикали">
+          <mxGeometry height="30" width="320" x="10" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-frame" parent="1" style="shape=swimlane;horizontal=0;rounded=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="GameDetail&#xa;(Детальная страница игры)">
+          <mxGeometry height="320" width="340" x="820" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-header" parent="detail-frame" style="shape=rectangle;rounded=0;fillColor=#ffffff;strokeColor=#cccccc;fontSize=9;" value="Кнопка Назад, название игры" vertex="1">
+          <mxGeometry height="40" width="320" x="10" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-image" parent="detail-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#999999;fontSize=9;" value="Большое изображение / видео" vertex="1">
+          <mxGeometry height="120" width="200" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-info" parent="detail-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=9;align=left;verticalAlign=top;" value="Описание, жанры, &#xa;платформы, рейтинг, &#xa;возраст, длительность, &#xa;количество игроков" vertex="1">
+          <mxGeometry height="160" width="110" x="220" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-screens" parent="detail-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=9;" value="Миниатюры скриншотов" vertex="1">
+          <mxGeometry height="60" width="320" x="10" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-frame" parent="1" style="shape=swimlane;horizontal=0;rounded=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="AdminLogin + AdminPanel&#xa;(Административный режим)">
+          <mxGeometry height="340" width="520" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-login" parent="admin-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#999999;fontSize=9;align=left;verticalAlign=top;" value="Экран логина (отдельный слой)&#xa;" vertex="1">
+          <mxGeometry height="130" width="200" x="-1" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-main" parent="admin-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=9;" value="AdminPanel (после входа)" vertex="1">
+          <mxGeometry height="260" width="290" x="210" y="22" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-main-header" parent="admin-main" style="shape=rectangle;rounded=0;fillColor=#f0f0f0;strokeColor=#cccccc;fontSize=9;align=left;verticalAlign=middle;" value="Хедер: &quot;Административная панель&quot;&#xa;Справа: [Просмотр данных] [Выйти] [Назад]" vertex="1">
+          <mxGeometry height="50" width="270" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-sidebar" parent="admin-main" style="shape=rectangle;rounded=1;fillColor=#fafafa;strokeColor=#dddddd;fontSize=9;align=left;verticalAlign=top;" value="Боковая панель&#xa;• Вкладки: [Игры] / &#xa;[Баннеры]&#xa;• Фильтр / поиск" vertex="1">
+          <mxGeometry height="180" width="90" x="10" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-work" parent="admin-main" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#dddddd;fontSize=9;align=left;verticalAlign=top;" value="    Рабочая область списка&#xa;Заголовок раздела + кнопка &#xa;&quot;Добавить&quot;&#xa;Сетка карточек игр / баннеров" vertex="1">
+          <mxGeometry height="180" width="170" x="110" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-card1" parent="admin-work" style="shape=rectangle;rounded=1;fillColor=#fdfdfd;strokeColor=#bbbbbb;fontSize=8;align=left;verticalAlign=top;" value="Карточка игры&#xa;• Обложка&#xa;• Название&#xa;• Статус (Доступна/Нет)&#xa;• Кнопки: [Редактировать] [Удалить]" vertex="1">
+          <mxGeometry height="70" width="150" x="7" y="59" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-card2" parent="admin-work" style="shape=rectangle;rounded=1;fillColor=#fdfdfd;strokeColor=#bbbbbb;fontSize=8;align=left;verticalAlign=top;" value="Карточка игры / баннера" vertex="1">
+          <mxGeometry height="23" width="150" x="10" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="BIIDaPQQm549HnY8G_tZ-1" parent="admin-frame" style="rounded=1;whiteSpace=wrap;html=1;" value="P I N" vertex="1">
+          <mxGeometry height="26" width="147" x="22" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="BIIDaPQQm549HnY8G_tZ-2" parent="admin-frame" style="rounded=1;whiteSpace=wrap;html=1;" value="Вход" vertex="1">
+          <mxGeometry height="26" width="120" x="35.5" y="197" as="geometry" />
+        </mxCell>
+        <mxCell id="BIIDaPQQm549HnY8G_tZ-3" parent="admin-frame" style="rounded=1;whiteSpace=wrap;html=1;" value="Назад" vertex="1">
+          <mxGeometry height="17" width="106" x="46" y="229" as="geometry" />
+        </mxCell>
+        <mxCell id="edit-modal-frame" parent="admin-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#999999;fontSize=9;align=left;verticalAlign=top;" value="Модальное окно: Добавить / редактировать игру" vertex="1">
+          <mxGeometry height="210" width="280" x="510" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="edit-modal-header" parent="edit-modal-frame" style="shape=rectangle;rounded=0;fillColor=#f0f0f0;strokeColor=#dddddd;fontSize=9;align=left;verticalAlign=middle;" value="Хедер: &quot;Добавить игру&quot; / &quot;Редактировать игру&quot;   [×]" vertex="1">
+          <mxGeometry height="32" width="260" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edit-left" parent="edit-modal-frame" style="shape=rectangle;rounded=1;fillColor=#fafafa;strokeColor=#e0e0e0;fontSize=8;align=left;verticalAlign=top;" value="Левая колонка&#xa;• Название игры&#xa;• Разработчик&#xa;• Краткое описание (многострочное поле)" vertex="1">
+          <mxGeometry height="110" width="130" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edit-right" parent="edit-modal-frame" style="shape=rectangle;rounded=1;fillColor=#fafafa;strokeColor=#e0e0e0;fontSize=8;align=left;verticalAlign=top;" value="Правая колонка&#xa;• Рейтинг&#xa;• Возрастной рейтинг&#xa;• Длительность&#xa;• Доступность (селектор)" vertex="1">
+          <mxGeometry height="110" width="130" x="145" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edit-buttons" parent="edit-modal-frame" style="shape=rectangle;rounded=0;fillColor=#ffffff;strokeColor=#ffffff;fontSize=8;align=right;verticalAlign=middle;" value="[Сохранить]   [Отмена]" vertex="1">
+          <mxGeometry height="30" width="260" x="10" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="db-frame" parent="1" style="shape=swimlane;horizontal=0;rounded=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=12;" value="DatabaseViewer&#xa;(Просмотр псевдо-БД)">
+          <mxGeometry height="320" width="440" x="520" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="db-header" parent="db-frame" style="shape=rectangle;rounded=0;fillColor=#ffffff;strokeColor=#cccccc;fontSize=9;align=left;verticalAlign=middle;" value="[← Назад]   WARPOINT VR — Data Tables&#xa;Источник: db.json" vertex="1">
+          <mxGeometry height="50" width="420" x="781" y="31" as="geometry" />
+        </mxCell>
+        <mxCell id="db-sidebar" parent="db-frame" style="shape=rectangle;rounded=1;fillColor=#fafafa;strokeColor=#dddddd;fontSize=9;align=left;verticalAlign=top;" value="Список таблиц&#xa;• games&#xa;• genres&#xa;• platforms&#xa;• languages&#xa;• features&#xa;• ageRatings&#xa;• durations&#xa;• gameGenres, ...&#xa;(выбор активной)" vertex="1">
+          <mxGeometry height="210" width="130" x="781" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="db-main" parent="db-frame" style="shape=rectangle;rounded=1;fillColor=#ffffff;strokeColor=#dddddd;fontSize=9;align=left;verticalAlign=top;" value="    Превью выбранной таблицы&#xa;    Шапка: название таблицы + количество записей&#xa;    Мини-таблица с колонками и несколькими строками" vertex="1">
+          <mxGeometry height="210" width="280" x="921" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="db-table1" parent="db-main" style="shape=rectangle;rounded=1;fillColor=#fdfdfd;strokeColor=#bbbbbb;fontSize=8;align=left;verticalAlign=top;" value="Таблица &quot;Games&quot;&#xa;id | title | rating | durationId | ageRatingId&#xa;1  | Half-Life: Alyx | 9.5 | 1 | 4&#xa;2  | Beat Saber      | 9.2 | 2 | 2" vertex="1">
+          <mxGeometry height="120" width="260" x="10" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="db-note" parent="db-frame" style="shape=text;fontSize=9;align=left;verticalAlign=top;" value="Простая визуализация псевдо-БД: выбор таблицы слева, просмотр структуры и примеров записей справа." vertex="1">
+          <mxGeometry height="40" width="420" x="10" y="295" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

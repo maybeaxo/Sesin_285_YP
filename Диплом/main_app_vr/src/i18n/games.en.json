@@ -1,0 +1,237 @@
+{
+  "games": {
+    "1": {
+      "title": "Half-Life: Alyx",
+      "description": "The legendary Half-Life series returns in virtual reality. Play as Alyx Vance in an exciting adventure.",
+      "features": ["Single Player", "Full VR Support", "Physics Interaction"],
+      "duration": "15-20 hours",
+      "players": "1 player"
+    },
+    "2": {
+      "title": "Beat Saber",
+      "description": "A rhythm game where you slash blocks with lightsabers to the beat of music. Great workout and entertainment!",
+      "features": ["Multiplayer", "Customization", "Mod Support"],
+      "duration": "Infinite",
+      "players": "1-2 players"
+    },
+    "3": {
+      "title": "The Walking Dead: Saints & Sinners",
+      "description": "Survival in a post-apocalyptic zombie world. Make decisions that affect the story.",
+      "features": ["Single Player", "Open World", "Choice and Consequences"],
+      "duration": "12-15 hours",
+      "players": "1 player"
+    },
+    "4": {
+      "title": "Superhot VR",
+      "description": "Time moves only when you move. Unique gameplay in action movie style.",
+      "features": ["Single Player", "Unique Mechanics", "Short Sessions"],
+      "duration": "3-4 hours",
+      "players": "1 player"
+    },
+    "5": {
+      "title": "Boneworks",
+      "description": "A physics simulator with advanced physics. Explore the world, solve puzzles and fight.",
+      "features": ["Advanced Physics", "Single Player", "Mod Support"],
+      "duration": "8-10 hours",
+      "players": "1 player"
+    },
+    "6": {
+      "title": "Pistol Whip",
+      "description": "A combination of rhythm game and shooter. Shoot to the beat of music, dodge bullets.",
+      "features": ["Rhythm Gameplay", "Multiple Levels", "Customization"],
+      "duration": "Infinite",
+      "players": "1 player"
+    },
+    "7": {
+      "title": "Blade & Sorcery",
+      "description": "Realistic melee combat simulator with magic. Fight enemies in a physics-based action game.",
+      "features": ["Sandbox", "Mod Support", "Physics Combat"],
+      "duration": "Infinite",
+      "players": "1 player"
+    },
+    "8": {
+      "title": "Moss",
+      "description": "A charming adventure with a mouse named Quill. Unique blend of platformer and puzzle.",
+      "features": ["Single Player", "Family Game", "Beautiful Graphics"],
+      "duration": "4-5 hours",
+      "players": "1 player"
+    },
+    "9": {
+      "title": "Population: One",
+      "description": "Battle royale in virtual reality. Fight other players in large-scale battles.",
+      "features": ["Multiplayer", "Free Game", "Regular Updates"],
+      "duration": "Infinite",
+      "players": "2-6 players"
+    },
+    "10": {
+      "title": "Job Simulator",
+      "description": "A work simulator set in the future where robots have replaced humans. Fun and relaxing game.",
+      "features": ["Family Game", "Humor", "Interactivity"],
+      "duration": "3-4 hours",
+      "players": "1 player"
+    },
+    "11": {
+      "title": "Asgard's Wrath",
+      "description": "Epic RPG in Norse mythology. Fight gods and monsters in a grand adventure.",
+      "features": ["RPG", "Open World", "Epic Story"],
+      "duration": "30-40 hours",
+      "players": "1 player"
+    },
+    "12": {
+      "title": "Lone Echo",
+      "description": "Space adventure with zero gravity. Explore a space station and uncover mysteries.",
+      "features": ["Zero Gravity", "Emotional Story", "Beautiful Graphics"],
+      "duration": "6-8 hours",
+      "players": "1 player"
+    },
+    "13": {
+      "title": "Arizona Sunshine",
+      "description": "Survival in the Arizona desert full of zombies. Cooperative mode for 2-4 players.",
+      "features": ["Co-op", "Horror", "Multiplayer"],
+      "duration": "4-5 hours",
+      "players": "1-4 players"
+    },
+    "14": {
+      "title": "The Elder Scrolls V: Skyrim VR",
+      "description": "The legendary RPG now in virtual reality. Explore the vast world of Skyrim in VR.",
+      "features": ["Open World", "RPG", "Mod Support"],
+      "duration": "100+ hours",
+      "players": "1 player"
+    },
+    "15": {
+      "title": "Vader Immortal",
+      "description": "Epic adventure in the Star Wars universe. Fight Darth Vader and learn the Force.",
+      "features": ["Star Wars", "Action", "Epic Story"],
+      "duration": "2-3 hours",
+      "players": "1 player"
+    },
+    "16": {
+      "title": "Gorn",
+      "description": "Bloody gladiator simulator with exaggerated physics. Fight in the arena in cartoon style.",
+      "features": ["Physics", "Humor", "Gladiator Battles"],
+      "duration": "3-4 hours",
+      "players": "1 player"
+    },
+    "17": {
+      "title": "Until You Fall",
+      "description": "Rhythmic action game with roguelike elements. Fight monsters to the beat of music.",
+      "features": ["Rhythm Gameplay", "Roguelike", "Customization"],
+      "duration": "Infinite",
+      "players": "1 player"
+    },
+    "18": {
+      "title": "I Expect You To Die",
+      "description": "Spy puzzle game in James Bond style. Solve puzzles and survive dangerous situations.",
+      "features": ["Puzzles", "Spy Story", "Humor"],
+      "duration": "3-4 hours",
+      "players": "1 player"
+    },
+    "19": {
+      "title": "Onward",
+      "description": "Realistic tactical shooter with team play. Coordinate actions with teammates.",
+      "features": ["Tactical", "Multiplayer", "Realistic Physics"],
+      "duration": "Infinite",
+      "players": "2-10 players"
+    },
+    "20": {
+      "title": "The Room VR: A Dark Matter",
+      "description": "Mysterious puzzle game in Victorian style. Explore rooms and solve mysteries.",
+      "features": ["Puzzles", "Mystery", "Beautiful Graphics"],
+      "duration": "4-5 hours",
+      "players": "1 player"
+    }
+  },
+  "genres": {
+    "Все": "All",
+    "Экшен": "Action",
+    "Приключения": "Adventure",
+    "Шутер": "Shooter",
+    "Ритм": "Rhythm",
+    "Музыка": "Music",
+    "Аркада": "Arcade",
+    "Выживание": "Survival",
+    "Хоррор": "Horror",
+    "Головоломка": "Puzzle",
+    "Инди": "Indie",
+    "Физика": "Physics",
+    "Песочница": "Sandbox",
+    "Платформер": "Platformer",
+    "Батл-рояль": "Battle Royale",
+    "Мультиплеер": "Multiplayer",
+    "Симулятор": "Simulator",
+    "Юмор": "Humor",
+    "Семейная": "Family",
+    "РПГ": "RPG",
+    "Научная фантастика": "Sci-Fi",
+    "Тактический шутер": "Tactical Shooter",
+    "Рогалик": "Roguelike",
+    "Мистика": "Mystery"
+  },
+  "platforms": {
+    "Все": "All",
+    "PC VR": "PC VR",
+    "Quest": "Quest",
+    "PSVR": "PSVR",
+    "SteamVR": "SteamVR"
+  },
+  "durationFilters": {
+    "Все": "All",
+    "До 1 часа": "Up to 1 hour",
+    "1-3 часа": "1-3 hours",
+    "3-6 часов": "3-6 hours",
+    "6-12 часов": "6-12 hours",
+    "12+ часов": "12+ hours",
+    "Бесконечная": "Infinite"
+  },
+  "features": {
+    "Одиночная игра": "Single Player",
+    "Полная поддержка VR": "Full VR Support",
+    "Физика взаимодействия": "Physics Interaction",
+    "Мультиплеер": "Multiplayer",
+    "Кастомизация": "Customization",
+    "Мод-поддержка": "Mod Support",
+    "Открытый мир": "Open World",
+    "Выбор и последствия": "Choice and Consequences",
+    "Уникальная механика": "Unique Mechanics",
+    "Короткие сессии": "Short Sessions",
+    "Продвинутая физика": "Advanced Physics",
+    "Ритм-геймплей": "Rhythm Gameplay",
+    "Множество уровней": "Multiple Levels",
+    "Песочница": "Sandbox",
+    "Физический бой": "Physics Combat",
+    "Семейная игра": "Family Game",
+    "Красивая графика": "Beautiful Graphics",
+    "Бесплатная игра": "Free Game",
+    "Постоянные обновления": "Regular Updates",
+    "Юмор": "Humor",
+    "Интерактивность": "Interactivity",
+    "Эпический сюжет": "Epic Story",
+    "Нулевая гравитация": "Zero Gravity",
+    "Эмоциональный сюжет": "Emotional Story",
+    "Кооператив": "Co-op",
+    "Хоррор": "Horror",
+    "Звездные Войны": "Star Wars",
+    "Гладиаторские бои": "Gladiator Battles",
+    "Рогалик": "Roguelike",
+    "Головоломки": "Puzzles",
+    "Шпионский сюжет": "Spy Story",
+    "Тактический": "Tactical",
+    "Реалистичная физика": "Realistic Physics",
+    "Мистика": "Mystery"
+  },
+  "languages": {
+    "Русский": "Russian",
+    "Английский": "English"
+  },
+  "banners": {
+    "1": {
+      "title": "New games every week!"
+    },
+    "2": {
+      "title": "20% discount on group sessions"
+    }
+  }
+}
+
+
+
