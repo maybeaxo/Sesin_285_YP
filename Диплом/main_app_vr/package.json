@@ -1,0 +1,30 @@
+{
+  "name": "warpoint-vr-kiosk",
+  "version": "1.0.0",
+  "description": "Информационно-справочная система выбора VR игр для парка развлечений WARPOINT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite preview --port 3000 --host"
+  },
+  "keywords": [
+    "vr",
+    "games",
+    "kiosk",
+    "warpoint",
+    "virtual-reality"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "terser": "^5.44.1",
+    "vite": "^5.0.8"
+  }
+}
